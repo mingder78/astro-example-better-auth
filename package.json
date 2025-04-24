@@ -1,10 +1,12 @@
 {
-  "name": "@examples/astro",
+  "name": "astro-example-better-auth",
   "type": "module",
   "private": true,
   "version": "0.0.1",
   "scripts": {
-    "dev": "pnpm migrate:auth && astro dev --port 3000",
+    "dev:1": "pnpm migrate:auth && astro dev --port 3000",
+    "dev": "astro dev",
+    "start": "pnpm migrate:auth && astro start --port 3000",
     "migrate:auth": "pnpx @better-auth/cli migrate",
     "build": "astro check && astro build",
     "preview": "astro preview"
